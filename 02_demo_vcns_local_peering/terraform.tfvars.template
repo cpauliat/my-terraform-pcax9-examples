@@ -21,12 +21,14 @@ http_proxy  = "http://10.20.30.40:80"
 # ============== NO UPDATE NEEDED BELOW
 
 # ---- IP addresses
-cidr_vcn            = "10.0.0.0/24"
-cidr_public_subnet  = "10.0.0.0/26"
-cidr_private_subnet = "10.0.0.128/26"
+cidr_vcn1            = "10.0.0.0/24"
+cidr_public1_subnet  = "10.0.0.0/26"
+cidr_private1_subnet = "10.0.0.128/26"
+cidr_vcn2            = "172.16.0.0/24"
+cidr_public2_subnet  = "172.16.0.0/26"
+cidr_private2_subnet = "172.16.0.128/26"
 
 # ---- Compute instance
 inst_shape  = "VM.PCAStandard1.1"
-mount_point = "/mnt/vol1"
 cloudinit_script_bastion = "userdata/bootstrap_bastion.sh"
 cloudinit_script_private = "userdata/bootstrap_private.sh"

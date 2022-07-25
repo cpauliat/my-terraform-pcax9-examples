@@ -17,11 +17,13 @@ Host d01bastion
           User opc
           IdentityFile ${var.ssh_private_key_file_bastion}  
           StrictHostKeyChecking no
+          UserKnownHostsFile=/dev/null
 Host d01private
           Hostname ${oci_core_instance.tf-demo01-private.private_ip}
           User opc
           IdentityFile ${var.ssh_private_key_file_private}  
           StrictHostKeyChecking no
+          UserKnownHostsFile=/dev/null
           proxycommand /usr/bin/ssh -F sshcfg -W %h:%p d01bastion
 EOF
 
