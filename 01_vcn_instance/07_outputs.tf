@@ -1,4 +1,4 @@
-# ------ Display the complete ssh command needed to connect to the instance
+# ------ Display instructions to connect to the instances
 output Instances {
   value = <<EOF
 
