@@ -1,0 +1,32 @@
+# ============== UPDATE INFORMATION BELOW BEFORE USE
+
+# -- Tenant 
+tenancy_ocid     = "ocid1.tenancy.AK00707070.x9pca1.45lg7rge8y883xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00090146"
+user_ocid        = "ocid1.user.AK00707070.x9pca1.pf5imoo7zxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxosy0qmwqbvgm"
+fingerprint      = "99:fc:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:51:c1"
+private_key_path = "/home/cpauliat/.oci/apikey_x9pca1.pem"
+region           = "x9pca1"
+compartment_ocid = "ocid1.compartment.AK00707070.x9pca1.d55on6v5xxxxxxxxxxxxxxxxxxxxxxxxxvbbpwep2a7q"	
+
+# ---- SSH key pair
+ssh_public_key_file = "sshkeys/ssh_key.pub"
+ssh_private_key_file= "sshkeys/ssh_key"
+
+# ---- Compute instances
+inst_image  = "ocid1.image.AK00707070.x9pca1.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"   # Oracle-Linux-8-2022.01.20_platimg
+http_proxy  = "http://10.20.30.40:80"
+nb_of_instances  = 8
+
+# ============== NO UPDATE NEEDED BELOW
+
+# ---- IP addresses
+cidr_vcn            = "10.0.0.0/24"
+cidr_public_subnet  = "10.0.0.0/26"
+cidr_private_subnet = "10.0.0.128/26"
+
+# ---- compute instances
+number_of_instances     = "3"
+instances_name          = [ "demo03_production", "demo03_preprod"     , "demo03_development" ]
+instances_hostname      = [ "d03prod"          , "d03preprod"         , "d03dev" ]
+instances_shape         = [ "VM.PCAStandard1.4", "VM.PCAStandard1.1"  , "VM.PCAStandard1.2"]
+instances_post_prov     = [ "userdata/prod.sh" , "userdata/preprod.sh", "userdata/dev.sh" ]
