@@ -2,7 +2,7 @@
 resource oci_core_instance tf-demo01-bastion {
   availability_domain  = "ad1"
   compartment_id       = var.compartment_ocid
-  display_name         = "tf-cpauliat-bastion"
+  display_name         = "tf-cpauliat-demo01-bastion"
   preserve_boot_volume = "false"
   shape                = var.inst_shape
 

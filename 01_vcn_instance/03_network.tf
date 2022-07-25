@@ -2,8 +2,8 @@
 resource oci_core_vcn tf-demo01-vcn {
   cidr_block     = var.cidr_vcn
   compartment_id = var.compartment_ocid
-  display_name   = "tf-cpauliat-vcn"
-  dns_label      = "cpauliat"
+  display_name   = "tf-cpauliat-demo01-vcn"
+  dns_label      = "d01vcn"
 }
 
 # ==================== public subnet

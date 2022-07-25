@@ -21,7 +21,7 @@ resource oci_core_volume_attachment tf-demo01-vol1-attach {
 resource oci_core_instance tf-demo01-private {
   availability_domain  = "ad1"
   compartment_id       = var.compartment_ocid
-  display_name         = "tf-cpauliat-private"
+  display_name         = "tf-cpauliat-demo01-private"
   preserve_boot_volume = "false"
   shape                = var.inst_shape
 
