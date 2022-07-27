@@ -1,0 +1,16 @@
+variable "tenancy_ocid" {}
+variable "user_ocid" {}
+variable "fingerprint" {}
+variable "private_key_path" {}
+variable "region" {}
+variable "compartment_ocid" {}
+variable "ssh_public_key_file" {}
+variable "ssh_private_key_file" {}
+variable "inst_image" {}
+variable "http_proxy" {}
+variable "cidr_vcn" {}
+variable "cidr_public_subnet" {}
+variable "cidr_private_subnet" {}
+variable "inst_shape" {}
+variable "cloudinit_script" {}
+variable "fs1_mount_point" {}
