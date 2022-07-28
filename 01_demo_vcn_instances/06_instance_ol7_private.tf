@@ -31,7 +31,7 @@ resource oci_core_instance tf-demo01-private {
   }
 
   create_vnic_details {
-    subnet_id      = oci_core_subnet.tf-demo01-private.id
+    subnet_id      = oci_core_subnet.tf-demo01-private-subnet.id
     hostname_label = "private"
     assign_public_ip = false
   }

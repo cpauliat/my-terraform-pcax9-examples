@@ -12,7 +12,7 @@ resource oci_core_instance tf-demo01-bastion {
   }
 
   create_vnic_details {
-    subnet_id      = oci_core_subnet.tf-demo01-public-subnet1.id
+    subnet_id      = oci_core_subnet.tf-demo01-public-subnet.id
     hostname_label = "bastion"
     assign_public_ip = true
   }

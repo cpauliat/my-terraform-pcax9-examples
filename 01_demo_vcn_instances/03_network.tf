@@ -72,7 +72,7 @@ resource oci_core_security_list tf-demo01-public-sl {
 }
 
 # ------ Create a public subnet 
-resource oci_core_subnet tf-demo01-public-subnet1 {
+resource oci_core_subnet tf-demo01-public-subnet {
   cidr_block          = var.cidr_public_subnet
   display_name        = "tf-cpauliat-public"
   dns_label           = "pubnet"
@@ -170,7 +170,7 @@ resource oci_core_security_list tf-demo01-private-sl {
 }
 
 # ------ Create a private subnet 
-resource oci_core_subnet tf-demo01-private {
+resource oci_core_subnet tf-demo01-private-subnet {
   cidr_block          = var.cidr_private_subnet
   display_name        = "tf-cpauliat-private"
   dns_label           = "privnet"
